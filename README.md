@@ -17,3 +17,11 @@
 
 <img width="1558" height="370" alt="屏幕截图 2026-03-04 132440" src="https://github.com/user-attachments/assets/fd595b5c-7bc7-4372-aa44-1a38631f4a12" />
 
+2.分析数据包
+这里测试的小程序为跳一跳，我们分别在两个软件中都开启代理，然后点击小程序进行游玩，【注意游玩的时间要长一点】，这里我先拿最高分的数据来进行分析：
+
+当游戏结束时BP里面会出现如下数据包：
+<img width="1676" height="146" alt="屏幕截图 2026-03-04 132925" src="https://github.com/user-attachments/assets/0c7cbde9-6578-4152-bf85-e1e8199b2004" />
+1.eggreport
+我们首先看eggreport里面的数据【最前面还有个session_id这里就不写出来了】：
+<pre><code>```json { ""egg_info_list":[{"id":14,"count":1,"type":0},{"id":14,"count":1,"type":3},{"id":16,"count":1,"type":0},{"id":16,"count":1,"type":3},{"id":17,"count":1,"type":0},{"id":17,"count":1,"type":1},{"id":17,"count":1,"type":3},{"id":18,"count":1,"type":0},{"id":18,"count":1,"type":3},{"id":21,"count":1,"type":0},{"id":21,"count":1,"type":3},{"id":23,"count":2,"type":0},{"id":23,"count":2,"type":3},{"id":28,"count":1,"type":0},{"id":28,"count":1,"type":3},{"id":29,"count":1,"type":0},{"id":29,"count":1,"type":3},{"id":30,"count":2,"type":0},{"id":30,"count":2,"type":1},{"id":30,"count":2,"type":3}]} ```</code></pre>
